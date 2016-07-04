@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+
+    <button ng-click="showForm()" class="pull-left btn btn-success btn-lg">+</button>
+  </div>
+  <div class="row">
+    <form ng-show='form'>
+      <h1>Add NEW Photo</h1>
+      <div class="form-group col-xs-12 col-lg-6">
+        <label id='topLabel' for="aptNum">Photo Name: </label>
+        <input ng-model="new.aptNum" type="text" class="form-control" id="aptNum" placeholder="Image Name" required>
+      </div>
+      <div class="form-group col-xs-12 col-lg-6">
+        <label for="imgUrl">Image URL</label>
+        <input ng-model="new.imageUrl" type="text" class="form-control" id="imgUrl" placeholder="URL" required>
+      </div>
+
+
+
+      <button ng-click="postNew()" class="btn basic">Add</button>
+    </form>
+  </div>
+
+  <div class="row">
+    <form ng-show='editForm'>
+      <h1>Edit Image {{ edit.aptNum }}</h1>
+      <div class="form-group col-xs-12 col-lg-6">
+        <label id='topLabel' for="aptNum">Photo Name: </label>
+        <input ng-model="edit.aptNum" type="text" class="form-control" id="aptNum" placeholder="new name" required>
+      </div>
+      <div class="form-group col-xs-12 col-lg-6">
+        <label for="imgUrl">Image URL</label>
+        <input ng-model="edit.imageUrl" type="text" class="form-control" id="imgUrl" placeholder="URL" required>
+      </div>
+
+
+
+      <button ng-click="deleteProp(edit._id)" class="btn btn-danger">Delete Prop</button>
+      <button ng-click="postEdit(edit._id)" class="btn basic">Save</button>
+    </form>
+  </div>
+
+
+    <div class="box col-xs-12 col-lg-4" ng-repeat="prop in props">
+      <div class="aptNum" ng-click='editProp(prop)'>
+         {{ prop.aptNum }}
+        <small>Click Name to Edit - and/or - Click Image for Details</small>
+      </div>
+      <img class='props'  ui-sref='propertyDetail({id: prop._id})' ng-src="{{prop.imageUrl}}">
+
+
+    </div>
+
+
+
+    </div>
+  </div>
+</div>

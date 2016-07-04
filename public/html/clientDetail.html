@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+
+  <br>
+
+      <tbody>
+      <br>
+          <div ng-repeat="client in client.apt">{{ client.aptNum }} <br>
+            <span>
+              <img class='props'  ui-sref='propertyDetail({id: client._id})' ng-src="{{client.imageUrl}}">
+            </span>
+          </div>
+
+
+
+  </div>
+</div>

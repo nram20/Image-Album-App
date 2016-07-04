@@ -1,0 +1,183 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container-fluid {
+    background-color: #009688;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 0;
+    font-size: 28px;
+}
+
+.navbar-nav li a {
+  font-size: 18px;
+}
+
+a {
+  margin-left: 35px;
+}
+
+img.props {
+    width: 348px;
+    height: 170px;
+    border-radius: 2px;
+}
+
+.sort {
+  margin-top: 50px;
+}
+
+span.sorts{
+    color: #00B7FF;
+    margin-left: 25px;
+}
+
+span.sorts:hover {
+  text-decoration: underline;
+}
+
+.box.col-xs-12.col-lg-4 {
+    margin: 10px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 350px;
+    background-color: #005D53;
+    padding-bottom: 15px;
+}
+
+.aptNum {
+    color: white;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.aptNum:hover, .aptNum:active {
+  color: lightgreen;
+  text-decoration: underline;
+}
+
+.info {
+    background-color: white;
+    padding: 5px;
+}
+
+button.pull-left.btn.btn-success.btn-lg {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+form {
+  border-top: 8px solid #005D53;
+  border-bottom: 8px solid #005D53;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+small, small:hover, small:active {
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+}
+
+table {
+  margin-top: 30px;
+}
+
+button.btn.editBtn, button.btn.deleteBtn {
+    border: none;
+    background-color: white;
+    padding: 0px;
+}
+
+.glyphicon-pencil {
+    color: orange;
+    font-size: 20px;
+}
+.glyphicon-remove {
+    color: red;
+    font-size: 20px;
+}
+
+button.btn.basic {
+    background-color: rgb(25, 228, 209);
+}
+
+.unsortLink:hover, .unsortLink:active {
+  text-decoration: underline;
+  color: rgb(25, 228, 209);
+}
+
+.detailName {
+  font-size: 65px;
+  margin-top: 100px;
+}
+
+img.detailImage {
+  width: 784px;
+}
+
+.big-box {
+  padding-bottom: 10px;
+  border: 8px solid black;
+  width: 800px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #005D53;
+}
+
+.detailInfo {
+    background-color: white;
+    padding: 23px;
+    font-size: 24px;
+}
+
+.col-xs-10.col-xs-offset-2 {
+    padding: 0px;
+}
+
+span.detailTenant {
+    color: white;
+    font-size: 36px;
+    margin-left: 15px;
+}
+
+span.tenantName.ng-binding.ng-scope {
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+}
+
+button.btn.btn-default.pull-right {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+label.tenantAdd {
+    color: white;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+td.detailLink:hover {
+  text-decoration: underline;
+}
